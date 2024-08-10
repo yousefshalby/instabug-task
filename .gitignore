@@ -34,3 +34,5 @@
 
 
 rails-app/db/data
+rails-app/tmp
+rails-app/log

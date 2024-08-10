@@ -44,4 +44,4 @@ db/backups/
 /.dockerignore
 /Dockerfile*
 
-rails-app/db/data
+rails-app/db/data/
