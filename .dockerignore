@@ -11,6 +11,9 @@
 /.env*
 !/.env*.erb
 
+# Ignore databases backups
+db/backups/
+
 # Ignore all default key files.
 /config/master.key
 /config/credentials/*.key
@@ -41,5 +44,5 @@
 /.dockerignore
 /Dockerfile*
 
-
-private_key.pem
+db/data
+# rails-app/db/data
