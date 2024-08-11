@@ -45,3 +45,52 @@ db/backups/
 /Dockerfile*
 
 rails-app/db/data/
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test files
+*_test.go
+
+# Output of the compiler
+#
+# Linux
+*.so
+*.a
+
+# MacOS
+*.dylib
+
+# Windows
+*.dll
+*.exe
+*.obj
+
+# Compiled CGO objects
+*_cgo.c
+*_cgo.h
+*_cgo.o
+*_cgo_export.h
+*_cgo_import.c
+
+# Compiled assembly files
+*.s
+
+# Dependency files
+*.d
+
+# Coverage data
+cover
+
+# Directories
+debug
+dist
+build
+
+# IDE files
+.vscode
+*.iml
