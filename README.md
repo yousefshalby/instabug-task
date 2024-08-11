@@ -3,22 +3,22 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Things i want to cover:
 
-* Ruby version
+* clone project: git clone https://github.com/yousefshalby/instabug-task.git
 
-* System dependencies
+* after cloning:  cd instabug-task/
 
-* Configuration
+* Configuration: add .env fields
 
-* Database creation
+* start project: docker compose -f local.yml up --build (it will take time)
 
-* Database initialization
+* after running: you wil find rails service,  golang service,  mysql database, redis, elasticsreach 
 
-* How to run the test suite
+* to try rails endpoint must stare with -> http://0.0.0.0:3000/applications/<applications_token>/chats/<chat_id>/messages
+  
+* to try golang endpoint must start with -> http://localhost:8080/api/v1/applications/<applications_token>/chats/<chat_id>/messages
 
-* Services (job queues, cache servers, search engines, etc.)
+* to check job queues task dashboard: -> http://0.0.0.0:3000/sidekiq
 
-* Deployment instructions
 
-* ...
