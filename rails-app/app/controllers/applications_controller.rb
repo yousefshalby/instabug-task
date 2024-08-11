@@ -1,4 +1,6 @@
 class ApplicationsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
     def create
       application = Application.new(application_params)
       if application.save
@@ -40,4 +42,3 @@ class ApplicationsController < ApplicationController
       params.require(:application).permit(:name)
     end
 end
-#     "token": "ece01c70b2ce0d44971d",

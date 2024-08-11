@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
       chat_id = @chat.id
       application_token = @application.token
       CreateMessageJob.perform_now(chat_id, application_token, message_params[:body])
-      next_message_number = @chat.messages.maximum(:number).to_i + 1
+      next_message_number = @chat.messages.maximum(:number).to_i
       render json: { message_number: next_message_number, status: "Message is being processed and will appear soon." }, status: :accepted
     else
       render json: { error: "Application or chat not found" }, status: :not_found
