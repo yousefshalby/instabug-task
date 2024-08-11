@@ -9,11 +9,13 @@ Things i want to cover:
 
 * after cloning: -> cd instabug-task/
 
-* Configuration: -> add .env fields
+* Configuration: -> add .env fields  you will find example data in .env.example
 
-* start project: -> docker compose -f local.yml up --build (it will take time)
+* start project: -> docker compose -f local.yml up --build  (it will take time)
+  
+* Database Migration: run this command -> docker exec -it instabug-task-web-1 bash   then  ----> run : rails db:migrate  to add migration
 
-* after running: you wil find rails service,  golang service,  mysql database, redis, elasticsreach 
+* After running: you will find rails service,  go-lang service,  my-sql database, redis, elasticsreach 
 
 * to try rails endpoint must stare with -> http://0.0.0.0:3000/applications/<applications_token>/chats/<chat_id>/messages
   
