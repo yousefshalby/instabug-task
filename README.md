@@ -5,13 +5,13 @@ application up and running.
 
 Things i want to cover:
 
-* clone project: git clone https://github.com/yousefshalby/instabug-task.git
+* clone project: -> git clone https://github.com/yousefshalby/instabug-task.git
 
-* after cloning:  cd instabug-task/
+* after cloning: -> cd instabug-task/
 
-* Configuration: add .env fields
+* Configuration: -> add .env fields
 
-* start project: docker compose -f local.yml up --build (it will take time)
+* start project: -> docker compose -f local.yml up --build (it will take time)
 
 * after running: you wil find rails service,  golang service,  mysql database, redis, elasticsreach 
 
